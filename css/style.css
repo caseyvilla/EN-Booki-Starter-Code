@@ -114,3 +114,12 @@ body {
 .popular-cards .card-rating {
     margin-bottom: 5px;
 }
+
+footer {
+    background-color: greenyellow;
+}
+
+.grid-container {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+}
