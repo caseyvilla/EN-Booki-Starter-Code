@@ -117,15 +117,19 @@ body {
 
 footer {
     background-color: #F2F2F2;
-    width: 1340px;
-    height: 163px;
 }
 
 .grid-container {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
-   grid-gap: 15px;
+   gap: 15px;
    padding: 20px;
+}
+
+@media (width < 700px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
 }
 
 ul li {
