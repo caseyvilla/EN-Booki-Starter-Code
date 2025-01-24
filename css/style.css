@@ -116,10 +116,32 @@ body {
 }
 
 footer {
-    background-color: greenyellow;
+    background-color: #F2F2F2;
+    width: 1340px;
+    height: 163px;
 }
 
 .grid-container {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 15px;
+   padding: 20px;
 }
+
+ul li {
+    font-weight: 400;
+    list-style-type: none;
+    line-height: 30px;
+    font-size: 16px;
+}
+ul li:first-child {
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 18px;
+
+}
+/* i actually did this first bc it made sense in my head first i didnt know there was a shortcut smh
+.topicname {
+font-weight: bold;
+}
+*/
