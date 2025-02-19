@@ -176,7 +176,8 @@ nav {
 .logo img{
     width: 61.09px;
     height: auto;
-    margin: 20px;
+    margin-top: 20px;
+    margin-left: auto;
 
 }
 
@@ -187,5 +188,58 @@ nav {
     gap: 100px;
     font-weight: 400;
     font-size: 16px;
-    position: absolute;
+}
+
+.homepage-text h2{
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+.homepage-text p{
+    margin-top: 0px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background: white;
+    border: .5px solid #ccc;
+    border-radius: 10px;
+    /*padding: 5px;*/
+    width: 348px;
+    overflow: hidden;
+}
+
+.search-icon {
+    padding: 10px;
+    background: #efefef;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 10px;
+    margin-left: 5px;
+}
+
+.search-button {
+    background: #0065FC;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+.search-button:focus {
+    outline: none;
+}
+
+.search-button:hover {
+    background: #0065FC;
 }
