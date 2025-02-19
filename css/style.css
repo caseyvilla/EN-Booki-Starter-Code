@@ -154,24 +154,38 @@ ul li a:hover {
     color: #0065FC;
 }
 
-.menu {
-    display: flex;
-    justify-content: end;
-    gap: 20px;
-    padding-right: 50px;
+nav {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
+
 .nav-link {
     text-decoration: none;
     color: black; 
+    box-shadow: 0 -2px 0 transparent;
+    transition: box-shadow 0.3s ease;
+    line-height: 1.5;
 }
 .nav-link:hover {
     color: #0065FC; 
+    box-shadow: 0 -2px 0; /* this one seemed the best to give the look i wanted + the line height creates an illustion of more space btw the line and text */
+    /* text-decoration: overline; i wanted to use this bc its so simple but the gap between the line and the text doesnt seem to be adjustable
+    border-top: solid; this one moves the text tho and idk how to fix it*/
 }
+
 .logo img{
     width: 61.09px;
     height: auto;
-    padding-left: 15px;
+    margin: 20px;
 
 }
-nav{
+
+.menu {
+    align-self: center;
+    justify-self: right;
+    display: flex;
+    gap: 100px;
+    font-weight: 400;
+    font-size: 16px;
+    position: absolute;
 }
