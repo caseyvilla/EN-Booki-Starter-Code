@@ -144,8 +144,34 @@ ul li:first-child {
     font-size: 18px;
 
 }
-/* i actually did this first bc it made sense in my head first i didnt know there was a shortcut smh
-.topicname {
-font-weight: bold;
+
+ul li a {
+    text-decoration: none;
+    color: black; 
 }
-*/
+
+ul li a:hover {
+    color: #0065FC;
+}
+
+.menu {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    padding-right: 50px;
+}
+.nav-link {
+    text-decoration: none;
+    color: black; 
+}
+.nav-link:hover {
+    color: #0065FC; 
+}
+.logo img{
+    width: 61.09px;
+    height: auto;
+    padding-left: 15px;
+
+}
+nav{
+}
