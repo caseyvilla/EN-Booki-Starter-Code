@@ -201,11 +201,12 @@ nav {
 .search-box {
     display: flex;
     align-items: center;
+    justify-items: center;
     background: white;
     border: .5px solid #ccc;
     border-radius: 10px;
-    /*padding: 5px;*/
-    width: 348px;
+    width: 200px;
+    height: auto;
     overflow: hidden;
 }
 
@@ -217,7 +218,6 @@ nav {
 }
 
 .search-input {
-    flex: 1;
     border: none;
     outline: none;
     font-size: 16px;
@@ -229,17 +229,21 @@ nav {
     background: #0065FC;
     color: white;
     border: none;
-    padding: 10px 15px;
+    outline: none;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-radius: 10px;
     font-size: 16px;
-    cursor: pointer;
     transition: 0.3s;
-    white-space: nowrap;
+
 }
 .search-button:focus {
     outline: none;
 }
 
 .search-button:hover {
-    background: #0065FC;
+    background: #DEEBFF;
+    color: black;
+    cursor: pointer;
 }
