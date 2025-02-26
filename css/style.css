@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0px;
 }
 
 .main-container {
@@ -162,15 +163,13 @@ nav {
 .nav-link {
     text-decoration: none;
     color: black; 
-    box-shadow: 0 -2px 0 transparent;
-    transition: box-shadow 0.3s ease;
-    line-height: 1.5;
+    padding-top: 10px;
+    border-top: solid white 2px;
 }
 .nav-link:hover {
     color: #0065FC; 
-    box-shadow: 0 -2px 0; /* this one seemed the best to give the look i wanted + the line height creates an illustion of more space btw the line and text */
-    /* text-decoration: overline; i wanted to use this bc its so simple but the gap between the line and the text doesnt seem to be adjustable
-    border-top: solid; this one moves the text tho and idk how to fix it*/
+    border-top: solid 2px;
+    cursor: pointer;
 }
 
 .logo img{
@@ -181,13 +180,20 @@ nav {
 
 }
 
+.logo img:hover{
+    cursor: pointer;
+}
+
 .menu {
     align-self: center;
     justify-self: right;
     display: flex;
+    margin: 0;
+    padding: 0;
     gap: 100px;
     font-weight: 400;
     font-size: 16px;
+    height: 48.5px;
 }
 
 .homepage-text h2{
@@ -203,24 +209,33 @@ nav {
     align-items: center;
     justify-items: center;
     background: white;
-    border: .5px solid #ccc;
+    border: .5px solid #D9D9D9;
     border-radius: 10px;
-    width: 200px;
+    width: 335px;
+    height: 48px;
     height: auto;
     overflow: hidden;
 }
 
 .search-icon {
-    padding: 10px;
-    background: #efefef;
-    border-radius: 10px;
-    font-size: 16px;
+    padding: 15px;
+    padding-left: 17px;
+    padding-right: 17px;
+    height: 18px;
+    background: #D9D9D9;
+    border-top-left-radius: 9.5px;
+    border-bottom-left-radius: 9.5px;
+    border: none;
+    justify-self: center;
+    align-self: center;
 }
+
 
 .search-input {
     border: none;
     outline: none;
     font-size: 16px;
+    font-weight: bold;
     padding: 10px;
     margin-left: 5px;
 }
@@ -230,12 +245,16 @@ nav {
     color: white;
     border: none;
     outline: none;
-    margin: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 10px;
+    justify-self: center;
+    align-self: center;
+    padding: 0px;
+    border-top-right-radius: 9.5px;
+    border-bottom-right-radius: 9.5px;
     font-size: 16px;
+    font-weight: bold;
     transition: 0.3s;
+    height: 48px;
+    width: 95px;
 
 }
 .search-button:focus {
@@ -243,6 +262,40 @@ nav {
 }
 
 .search-button:hover {
+    background: #DEEBFF;
+    color: black;
+    cursor: pointer;
+}
+
+.filter-content p {
+    border: 1px solid #D9D9D9;
+    border-radius: 55px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-weight: bold;
+    vertical-align: baseline;
+    margin: 0;
+    height: 28px;
+
+}
+
+.filter-content img {
+    padding-right: 10px;
+    height: 20px;
+    vertical-align: baseline;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.filter-content {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    gap: 20px;
+    height: 50px;
+}
+
+.filter-content p:hover {
     background: #DEEBFF;
     color: black;
     cursor: pointer;
