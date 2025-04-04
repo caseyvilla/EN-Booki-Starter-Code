@@ -152,6 +152,10 @@ nav {
     align-self: center;
 }
 
+.search-button-icon {
+    display: none;
+}
+
 
 .search-input {
     border: none;
@@ -176,9 +180,9 @@ nav {
     font-weight: bold;
     transition: 0.3s;
     height: 48px;
-    width: 95px;
-
+    width: 95px;  
 }
+
 .search-button:focus {
     outline: none;
 }
@@ -187,6 +191,18 @@ nav {
     background: #DEEBFF;
     color: black;
     cursor: pointer;
+}
+
+@media (width < 700px) {
+    .search-button-icon {
+        display: inline;
+    }
+    .search-text {
+        display: none;
+    }
+    .search-box {
+        width: 100%;
+    }
 }
 
 .filter-content h5 {
