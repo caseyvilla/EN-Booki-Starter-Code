@@ -216,13 +216,20 @@ nav {
 
 @media (width < 700px) {
     .filter-content {
-        flex-direction: column;
-        align-items: flex-start;
+        /* flex-direction: column;
+        align-items: flex-start; */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         
     }
-    .filter-content h5 {
+    /* .filter-content h5 {
         width: 50%;
-    }
+    } */
+    .filter-content h3, 
+    .filter-content p {
+        grid-column: 1/3;
+     }
+    
 }
 
 .filter-content h5:hover {
